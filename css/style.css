@@ -13,16 +13,15 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-family:url('./assets/fonts/HankenGrotesk-Regular.ttf');
+    font-family: url('./assets/fonts/HankenGrotesk-Regular.ttf');
 
 
 }
 
 .cards .card1 {
-    background: linear-gradient(180deg, hsl(252, 100%, 67%) 20%, hsla(252, 100%, 67%, 0.33) 15%, hsl(252, 100%, 67%) 20%, hsl(241, 81%, 54%) 50%,hsl(241, 81%, 54%) 75%, hsl(241, 81%, 54%) 75%);
+    background: linear-gradient(180deg, hsl(252, 100%, 67%) 20%, #7857ff54 15%, hsl(252, 100%, 67%) 20%, hsl(241, 81%, 54%) 50%, hsl(241, 81%, 54%) 75%, #2e2be9 75%);
 
     width: 15vw;
-    height: 60%;
     padding-left: 40px;
     padding-right: 40px;
     /* padding-top: 6px; */
@@ -32,30 +31,35 @@ body {
     z-index: 100;
     color: white;
     font-family: url('./assets/fonts/HankenGrotesk-Bold.ttf');
-    
+
 }
+
 .cards .card1 .grade {
-background-color: hsla(241, 72%, 46%, 0.3) ;
-z-index: 100;
-/* margin: 50px; */
-margin-bottom: 15PX;
-border-radius: 100%;
- padding-top: 40px;
-padding-bottom: 40px; 
+    background-color: hsla(241, 72%, 46%, 0.3);
+    z-index: 100;
+    /* margin: 50px; */
+    margin-bottom: 15PX;
+    border-radius: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
+
 .cards .card1 .grade h1 {
     margin: 0px;
     font-size: 50px;
     font-family: url('./assets/fonts/HankenGrotesk-Bold.ttf');
 
 }
+
 .cards .card1 .grade P {
     color: #b8b7b7ec;
 }
+
 .cards .card1 h4 {
     color: #ffffff;
     font-size: 25px;
 }
+
 .cards .card1 p {
     color: #b8b7b7ec;
     font-size: 16px;
@@ -65,37 +69,80 @@ padding-bottom: 40px;
 
 .cards .card2 {
     background-color: white;
-    width: fit-content;
-    height: 60%;
-    /* padding-left: 40px;
-    padding-right: 40px; */
+    width: 15vw;
+    /* height: 65vh; */
+    text-align: end;
     border-radius: 15px;
-    /* color: var(--main-color); */
-
+    padding-left: 80px;
+    padding-right: 40px;
+    padding-bottom: 45px;
+    transform: translate(-10%, 0);
+    /* padding-right: 15px; */
 }
-.cards .card2{
-    
+
+.cards .card2 h3 {
+    text-align: left;
+}
+
+.cards .card2 .bars {
+    margin-top: 15px;
 }
 
 .cards .card2 .bars .bar {
-    /* display: flex;
-    
-    justify-content: space-between; */
-    /* text-align: center;
-    margin: 10px;
-    background-color: #666;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 10px;
-    width:100% ; */
-    /* background-color: red; */
-    /* display: flex; */
-    /* justify-content: space-between; */
+    padding-left: 8px;
+    padding-right: 8px;
+    justify-content: space-between;
+
+
+}
+
+.cards .card2 .bars .bar:nth-child(1) .right h4 {
+    color: hsl(0, 100%, 67%);
+    font-size: 20px;
+}
+.cards .card2 .bars .bar:nth-child(1) {
+   background-color: hsla(0, 100%, 67%, 0.192);
+}
+
+.cards .card2 .bars .bar:nth-child(2) .right h4 {
+    color: hsl(39, 100%, 56%);
+    font-size: 20px;
+}
+.cards .card2 .bars .bar:nth-child(2) {
+    background-color:hsl(39, 100%, 56%, 0.192);
+ }
+.cards .card2 .bars .bar:nth-child(3) .right h4 {
+    color: hsl(166, 100%, 37%);
+    font-size: 20px;
+}
+.cards .card2 .bars .bar:nth-child(3) {
+    background-color: hsl(166, 100%, 37%, 0.192);
+ }
+.cards .card2 .bars .bar:nth-child(4) .right h4 {
+    color:hsl(234, 85%, 45%);
+    font-size: 20px;
+}
+.cards .card2 .bars .bar:nth-child(4) {
+    background-color: hsl(234, 85%, 45%, 0.192);
+ }
+
+.cards .card2 .bars .bar .left i:nth-child(2) {
+    color: rgba(101, 101, 101, 0.374);
+    font-size: 20px;
+}
+.cards .card2 .bars .bar .left i:nth-child(1) {
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: 20px;
+
 }
 
 .cards .card2 .bars .bar .left {
-    display: flex;
-    margin: 0px;
-    justify-content: space-between;
-    /* padding-left: 20px; */
+    width: 100%
 }
 
 .cards .card2 .bars .bar .right {
@@ -104,13 +151,16 @@ padding-bottom: 40px;
 
 .cards .card2 .bars .bar .right h4 {
     margin: 0px;
+    margin-left: 10px;
 }
 
 .card2 button {
     border-radius: 20px;
-    padding: 8px;
+    padding: 15px;
     width: 15vw;
     border: none;
+    background-color: #2e2be9;
+    color: white;
 
 }
 
@@ -146,31 +196,33 @@ padding-bottom: 40px;
 
 
 @media screen and (max-width: 480px) {
+
     /* Your CSS styles for small phones go here */
     .cards {
         display: flex;
         flex-direction: column;
-        justify-content: center;        
+        justify-content: center;
     }
+
     .cards .card1 {
-    
+
         width: 100vw;
         height: 40%;
         padding-bottom: 60px;
-       margin-bottom: 20px;
-       margin-top: 0px;
-       transform: translate(0 ,-9%);
-       border-radius: 100px;
-       padding-top: 20px;
+        margin-bottom: 20px;
+        margin-top: 0px;
+        transform: translate(0, -9%);
+        border-radius: 100px;
+        padding-top: 20px;
     }
-    
+
     .cards .card2 {
         background-color: white;
         width: 15vw;
         height: 50%;
         padding-left: 40px;
         padding-right: 40px;
-    
+
         /* padding-top: 6px; */
         /* padding-bottom: 6px; */
         /* text-align: center; */
